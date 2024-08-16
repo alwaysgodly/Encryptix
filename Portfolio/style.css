@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #151414;
+    color: #f5f1f1;
+    padding: 0 20px;
+}
+
+header{
+    background-image: url('header-bg.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    text-shadow: 1px 1px 2px black;
+    padding: 60px 0;
+    text-align: center;
+
+}
+
+header h1{
+    margin-bottom: 10px;
+
+}
+
+header nav ul{
+   list-style: circle;
+   padding: 0;
+}
+
+header nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+section#about{
+    background-image: url(about.webp);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    padding: 60px 20px;
+}
+
+h2{
+    margin-bottom: 10px;
+
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border: 3px solid var(--white-color)
+
+}
+
+section#projects {
+    background-color: var(--text-color);
+    padding: 60px 20px;
+}
+
+.project-card{
+    background-color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+section#skills{
+    background-color: var(--text-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section#skills ul {
+    list-style: circle;
+    padding: 0;
+}
+
+section#skills ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+section#resume{
+
+    background-color: #151414;
+    background-size: cover;
+    background-position: center;
+    color: var(--background-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#resume a{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+
+#resume a:hover{
+    background-color: darken(var(--primary-color), 10%);
+}
+
+section#Contact {
+    background-image: url('contact-bg.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-top: 40px;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {opacity: 1;}
+
+}
+
+
+header, section , footer{
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+
+
+
